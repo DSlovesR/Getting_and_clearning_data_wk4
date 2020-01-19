@@ -12,21 +12,19 @@ Downloaded .zip file has following data files/Folders:
 1- test - Folder contains three files and one sub folder
 	- Subject_test.txt - Each test row identifies the subject who performed the activity. Its range is from 1 to 30. 
 	- X_test.txt - Test set containing 561 variables.
-	- y_test.txt - Test label
-	- Inertial Signals (folder) not in scope of the assignment
+	- y_test.txt - Test label.
+	- Inertial Signals (folder) not in scope of the assignment.
 2- train - Folder contains three files and one sub folder
 	- Subject_train.txt - Each Training row identifies the subject who performed the activity. Its range is from 1 to 30. 
 	- X_train.txt - Training data containing 561 variables.
 	- y_train.txt - training labels.
-	- Inertial Signals (folder) not in scope of the assignment
+	- Inertial Signals (folder) not in scope of the assignment.
 
-3- Activity_labels.txt - Contains 6 actvities with the description
+3- Activity_labels.txt - Contains 6 actvities with the descriptions.
 
-4- features.txt - List of all features/varaibles
+4- features.txt - List of all features/varaibles.
 
-5- features_info.txt - detail of variables
-
-6- ReadME.txt
+5- features_info.txt - details of variable.
 
 ## Source file(s)
 
