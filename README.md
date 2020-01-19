@@ -1,12 +1,12 @@
 # Getting and Cleaning data
 Week 4 assignemnt
 
-#Introduction
+## Introduction
 
 The objective of this exercise is to load data from internet link provided and prepare a dataset. Dataset is prepared from the zip file downloaded from UCI Machine meanring repository containing Smartphone - recognitio of human activities and postural transitions data. 
 Final dataset contians the mean and std of the traing and test dataset features.
 
-#Data
+## Data
 
 Downloaded .zip file has following data files/Folders:
 1- test - Folder contains three files and one sub folder
@@ -28,7 +28,7 @@ Downloaded .zip file has following data files/Folders:
 
 6- ReadME.txt
 
-#Analysis
+## Analysis
 
 run_analysis.R - R script contians the set of instruction to download the zip file and load trainig, test and other txt files to prepare tidy dataset.
 
