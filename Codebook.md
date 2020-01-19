@@ -49,7 +49,17 @@ Download data using download.file() and copy into local folder.
 ---------------------------------------------------------------
 
 ``` r
-#download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dat#aset.zip", destfile = ".//UCIDataset.zip", mode= "wb")
+#download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectf#iles%2FUCI%20HAR%20Dat#aset.zip", destfile = ".//UCIDataset.zip", mode= #"wb")
+
+#unzip and extract contents in current path
+#unzip(".//UCIDataset.zip" )
+
+#check wether file directory exists
+#if( !file.exists(".//UCI HAR Dataset"))
+#{
+#   Stop("No data folder found!")
+#}
+
 
 #load activities
 Activity <- fread( "./UCI HAR Dataset/Activity_labels.txt", col.names = c("CODE", "DESC"))
@@ -573,5 +583,5 @@ Create data set as a txt file with write.table() using row.name=FALSE
 ---------------------------------------------------------------------
 
 ``` r
-write.table( tidy, "tidyData.txt", row.names = FALSE)
+write.table( tidy, "tidy.txt", row.names = FALSE)
 ```
