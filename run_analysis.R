@@ -66,10 +66,11 @@ xDS <- xDS[, ..fIndex]
 names(xDS)  <- features[fIndex, DESC]
 
 mergedDS <- cbind( sDS, yDS, xDS)
+head( mergedDS,3)
 
 # 3-  Uses descriptive activity names to name the activities in the data set
 mergedDS$Label <- Activity[ yDS$Label, DESC]
-
+head( mergedDS[,Label],6)
 
 # 4-  Appropriately labels the data set with descriptive variable names.
 
@@ -85,11 +86,15 @@ names(mergedDS) <- gsub("[()]", "", names(mergedDS))
 
 # 5-  From the data set in step 4, creates a second, independent tidy data set with the  #average of each variable for each activity and each subject.
 
-#compute mean for all data points
+#compute mean for all data points by each subject and labels
 tidy <- mergedDS %>%
          group_by ( Subject, Label) %>%
-         summarise_all( funs( mean))
+         summarise_all( list( mean= mean) )
+
+#tidy structure and data
+str(tidy)
+head(tidy,3)
 
 
 #Create data set as a txt file with write.table() using row.name=FALSE 
-write.table( tidy, "tidyData.txt", row.names = FALSE)
+write.table( tidy, "tidy.txt", row.names = FALSE)
