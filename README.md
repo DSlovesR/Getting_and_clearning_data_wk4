@@ -28,7 +28,7 @@ Downloaded .zip file has following data files/Folders:
 
 6- ReadME.txt
 
-## Analysis
+## Source file(s)
 
 run_analysis.R - R script contians the set of instruction to download the zip file and load trainig, test and other txt files to prepare tidy dataset.
 
